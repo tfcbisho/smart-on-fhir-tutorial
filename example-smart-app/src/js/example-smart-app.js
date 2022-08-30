@@ -23,6 +23,9 @@
                     }
                   });
 
+        var allergy = smart.patient.api.fetchAll({
+          type: 'AllergyIntolerance', });
+        
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
@@ -58,6 +61,8 @@
           if (typeof diastolicbp != 'undefined') {
             p.diastolicbp = diastolicbp;
           }
+          
+          console.log(allergy)
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
