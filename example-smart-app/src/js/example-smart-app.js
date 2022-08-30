@@ -62,7 +62,7 @@
             p.diastolicbp = diastolicbp;
           }
           
-          console.log(allergy)
+          console.log(allergy);
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
