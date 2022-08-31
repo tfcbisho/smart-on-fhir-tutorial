@@ -54,6 +54,7 @@
           var allergyTable = "<table>";
           var allergyLen = allergy.length;
           console.log(allergyLen);
+          console.log(allergy);
           for (var i=0;i<allergyLen;i++){
             console.log("allergynum "+i);
                 var reactionStr = [];
