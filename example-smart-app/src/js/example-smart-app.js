@@ -52,7 +52,7 @@
           var temp = byCodes('8310-5');
           
           var allergyTable = "<table>";
-          var allergyLen = allergies.length;
+          var allergyLen = allergy.length;
           for (var i=0;i<allergyLen;i++){
                 var reactionStr = [];
                 if (allergies[i].reaction !== undefined) {
