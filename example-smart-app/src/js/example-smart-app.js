@@ -55,12 +55,12 @@
           var allergyLen = allergy.length;
           for (var i=0;i<allergyLen;i++){
                 var reactionStr = [];
-                if (allergies[i].reaction !== undefined) {
-                    for(var j=0,jLen=allergies[i].reaction.length;j<jLen;j++) {
-                            reactionStr.push(allergies[i].reaction[j].manifestation[0].text);
+                if (allergy[i].reaction !== undefined) {
+                    for(var j=0,jLen=allergy[i].reaction.length;j<jLen;j++) {
+                            reactionStr.push(allergy[i].reaction[j].manifestation[0].text);
                     }
                 }
-            allergyTable += "<tr><td>" +allergies[i].code.text+"</td><td>"+reactionStr.join(",")+"</td></tr>";
+            allergyTable += "<tr><td>" +allergy[i].code.text+"</td><td>"+reactionStr.join(",")+"</td></tr>";
           }
           if (allergyLen === 0) {
             allergyTable += "<td><tr>No Allergies Documented</td></tr>";
