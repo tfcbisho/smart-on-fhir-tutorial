@@ -87,7 +87,8 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.temp = getQuantityValueAndUnit(temp[0]);
-          p.allergy = getQuantityValueAndUnit(allergy[0]);
+          p.allergy = allergyTable;
+          console.log(allergyTable);
 
           ret.resolve(p);
         });
